@@ -1,0 +1,492 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    background-color: #7f7171;
+}       
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    position: absolute;
+    width: 14%;
+    min-width: 200px;
+    height: 10%;
+    min-height: 80px;
+    color: #333;
+    letter-spacing: 2px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition: 0.8s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.button:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.button-Github {
+    top: 40%;
+    left: 30%;
+}
+.button-Telegram {
+    top: 40%;
+    left: 45%;
+}
+.button-YouTube {
+    top: 40%;
+    left: 60%;
+}
+.button-link {
+    background-color: #c9c8c8;
+    position: absolute;
+    text-decoration: none;
+    color: #1a1919;
+    width: 100%;
+    height: 100%;
+}
+.conteiner {
+    /*border: 3px solid rgb(72, 0, 255);*/
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conteiner-text {
+    /*border: 3px solid rgb(255, 0, 136);*/
+    display: flex;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+.Github-text,
+.fa-github {
+    color: rgb(53, 53, 53);
+    animation-name: Github-color1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes Github-color1{
+
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: rgb(53, 53, 53);
+    }
+}
+.Telegram-text,
+.fa-paper-plane {
+    color: #2579d8;
+    animation-name: Telegram-color2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes Telegram-color2{
+
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #2579d8;
+    }
+}
+.YouTube-text,
+.fa-youtube {
+    color: #eb1313;
+    animation-name: YouTube-color3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes YouTube-color3{
+
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #eb1313;
+    }
+}
+.button:hover .Github-text,
+.button:hover .fa-github {
+    color: #fff;
+    animation-name: Github-color-1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes Github-color-1{
+
+    0%{
+        color: rgb(53, 53, 53);
+    }
+    100%{
+        color: #fff;
+    }
+}
+.button:hover .Telegram-text,
+.button:hover .fa-paper-plane {
+    color: #fff;
+    animation-name: Telegram-color-2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes Telegram-color-2{
+
+    0%{
+        color: #2579d8;
+    }
+    100%{
+        color: #fff;
+    }
+}
+.button:hover .YouTube-text,
+.button:hover .fa-youtube {
+    color: #fff;
+    animation-name: YouTube-color-3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes YouTube-color-3{
+
+    0%{
+        color: #eb1313;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+
+
+
+.fa {
+    /*border: 3px solid rgb(0, 255, 51);*/
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+}
+.button-link:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #858080;
+    transform: 0.8s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.button-link:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #6c6868;
+    transform: 0.8s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+/*------------------------------------------------------------------------------------------------------------------------------- hover Github */
+.button-link-Github:hover {
+    background: rgb(53, 53, 53);
+    animation-name: circle1;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle1{
+
+    0%{
+        background: #c9c8c8;
+    }
+    100%{
+        background: rgb(53, 53, 53);
+    }
+}
+
+.button-link-Github:hover:before {
+    background: rgb(28, 27, 27);
+    animation-name: circle11;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle11{
+
+    0%{
+        background: #858080;
+    }
+    100%{
+        background: rgb(28, 27, 27);
+    }
+}
+.button-link-Github:hover:after {
+    background: rgb(18, 18, 18);
+    animation-name: circle111;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle111{
+
+    0%{
+        background: #6c6868;
+    }
+    100%{
+        background: rgb(18, 18, 18);
+    }
+}
+/*-------------------------------------------------------------------------------------------  Github */
+.button-link-Github {
+    background: #c9c8c8;
+    animation-name: circle-1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-1{
+
+    0%{
+        background: rgb(53, 53, 53);
+    }
+    100%{
+        background: #c9c8c8;
+    }
+}
+
+.button-link-Github:before {
+    background: #858080;
+    animation-name: circle-11;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-11{
+
+    0%{
+        background: rgb(28, 27, 27);
+    }
+    100%{
+        background: #858080;
+    }
+}
+.button-link-Github:after {
+    background: #6c6868;
+    animation-name: circle-111;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-111{
+
+    0%{
+        background: rgb(18, 18, 18);
+    }
+    100%{
+        background: #6c6868;
+    }
+}
+/*------------------------------------------------------------------------------------------------------------------------------- hover Telegram */
+.button-link-Telegram:hover {
+    background: #2579d8;
+    animation-name: circle2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle2{
+
+    0%{
+        background: #c9c8c8;
+    }
+    100%{
+        background: #2579d8;
+    }
+}
+
+.button-link-Telegram:hover:before {
+    background: #2569b7;
+    animation-name: circle22;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle22{
+
+    0%{
+        background: #858080;
+    }
+    100%{
+        background: #2569b7;
+    }
+}
+
+.button-link-Telegram:hover:after {
+    background: #124a8b;
+    animation-name: circle222;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle222{
+
+    0%{
+        background: #6c6868;
+    }
+    100%{
+        background: #124a8b;
+    }
+}
+/*-------------------------------------------------------------------------------------------  Telegram */
+.button-link-Telegram {
+    background: #c9c8c8;
+    animation-name: circle-2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-2{
+
+    0%{
+        background: #2579d8;
+    }
+    100%{
+        background: #c9c8c8;
+    }
+}
+
+.button-link-Telegram:before {
+    background: #858080;
+    animation-name: circle-22;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-22{
+
+    0%{
+        background: #2569b7;
+    }
+    100%{
+        background: #858080;
+    }
+}
+
+.button-link-Telegram:after {
+    background: #6c6868;
+    animation-name: circle-222;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-222{
+
+    0%{
+        background: #124a8b;
+    }
+    100%{
+        background: #6c6868;
+    }
+}
+/*------------------------------------------------------------------------------------------------------------------------------- hover YouTube */
+.button-link-YouTube:hover {
+    background: #eb1313;
+    animation-name: circle3;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle3{
+
+    0%{
+        background: #c9c8c8;
+    }
+    100%{
+        background: #eb1313;
+    }
+}
+
+.button-link-YouTube:hover:before {
+    background: #c11616;
+    animation-name: circle33;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle33{
+
+    0%{
+        background: #858080;
+    }
+    100%{
+        background: #c11616;
+    }
+}
+
+.button-link-YouTube:hover:after {
+    background: #850c0c;
+    animation-name: circle333;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes circle333{
+
+    0%{
+        background: #6c6868;
+    }
+    100%{
+        background: #850c0c;
+    }
+}
+/*-------------------------------------------------------------------------------------------  YouTube */
+.button-link-YouTube {
+    background: #c9c8c8;
+    animation-name: circle-3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-3{
+
+    0%{
+        background: #eb1313;
+    }
+    100%{
+        background: #c9c8c8;
+    }
+}
+.button-link-YouTube:before {
+    background: #858080;
+    animation-name: circle-33;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-33{
+
+    0%{
+        background: #c11616;
+    }
+    100%{
+        background: #858080;
+    }
+}
+
+.button-link-YouTube:after {
+    background: #6c6868;
+    animation-name: circle-333;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes circle-333{
+
+    0%{
+        background: #850c0c;
+    }
+    100%{
+        background: #6c6868;
+    }
+}
+
